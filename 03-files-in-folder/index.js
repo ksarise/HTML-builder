@@ -5,7 +5,7 @@ const { stdin, stdout } = require('node:process');
 // {withFileTypes: true},
 fs.readdir(relativePath, (err, files) => {
   files.forEach((file) => {
-    console.log(file);
+    // console.log(file);
     const filePath = path.join(relativePath, file);
     // console.log(filePath);
     fs.stat(filePath, (err, stat) => {
